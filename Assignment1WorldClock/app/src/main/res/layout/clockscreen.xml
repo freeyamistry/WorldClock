@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/clockscreen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft='20dp'
+    android:layout_marginTop='20dp'
+    android:layout_marginRight='20dp'
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="World Clock"
+                android:textAllCaps="true"
+                android:textSize="24sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/refresh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:shadowColor="#FF5722"
+                    android:text="Refresh" />
+
+                <Switch
+                    android:id="@+id/switch1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="12HR"
+                    android:textOff="12HR"
+                    android:textOn="24HR" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#00FF9800"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/sydneyTime"
+                    android:layout_width="350dp"
+                    android:layout_height="70dp"
+                    android:layout_weight="1"
+                    android:text="Time"
+                    android:textSize="30sp" />
+
+                <ImageView
+                    android:id="@+id/sydneyImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/sydney"
+                    app:srcCompat="@mipmap/ic_launcher" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/sydneyText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:text="Sydney"
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:id="@+id/australiaText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:text="Australia"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#00FF9800"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/shanghaiTime"
+                    android:layout_width="350dp"
+                    android:layout_height="70dp"
+                    android:layout_weight="1"
+                    android:text="Time"
+                    android:textSize="30sp" />
+
+                <ImageView
+                    android:id="@+id/shanghaiImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:src="@drawable/shanghai"
+                    android:layout_weight="1"
+                    app:srcCompat="@mipmap/ic_launcher" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/shanghai"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:text="Shanghai"
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:id="@+id/china"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:text="China"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#00FF9800"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/torontoTime"
+                    android:layout_width="350dp"
+                    android:layout_height="70dp"
+                    android:layout_weight="1"
+                    android:text="12:56 PM"
+                    android:textSize="26sp" />
+
+                <ImageView
+                    android:id="@+id/torontoImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/mexicocity"
+                    app:srcCompat="@mipmap/ic_launcher" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/toronto"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:text="Mexico City"
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:id="@+id/Mexico"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:text="France"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#00FF9800"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/londonTime"
+                    android:layout_width="350dp"
+                    android:layout_height="70dp"
+                    android:layout_weight="1"
+                    android:text="Time"
+                    android:textSize="30sp" />
+
+                <ImageView
+                    android:id="@+id/londonImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:src="@drawable/london"
+                    android:layout_weight="1"
+                    app:srcCompat="@mipmap/ic_launcher" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/london"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:text="London"
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:id="@+id/england"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:text="England"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#00FF9800"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/newDelhiTime"
+                    android:layout_width="350dp"
+                    android:layout_height="70dp"
+                    android:layout_weight="1"
+                    android:text="Time"
+                    android:textSize="30sp" />
+
+                <ImageView
+                    android:id="@+id/amsterdamImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:src="@drawable/amsterdam"
+                    android:layout_weight="1"
+                    app:srcCompat="@mipmap/ic_launcher" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/newDelhi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:text="Amsterdam"
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:id="@+id/india"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:text="Netherlands"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#00FF9800"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/istanbulTime"
+                    android:layout_width="350dp"
+                    android:layout_height="70dp"
+                    android:layout_weight="1"
+                    android:text="Time"
+                    android:textSize="30sp" />
+
+                <ImageView
+                    android:id="@+id/istanbulImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:src="@drawable/istanbul"
+                    android:layout_weight="1"
+                    app:srcCompat="@mipmap/ic_launcher" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/istanbul"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:text="Istanbul"
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:id="@+id/turkey"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:text="Turkey"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
